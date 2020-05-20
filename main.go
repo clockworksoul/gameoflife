@@ -7,12 +7,12 @@ import (
 	"time"
 )
 
-const sizeX = 40
-const sizeY = 40
-const randomSeedPercent = 0.25
+const sizeX = 100
+const sizeY = 50
+const randomSeedPercent = 0.50
 
 func main() {
-	grid := newGrid(sizeX, sizeY)
+	grid := newGrid(sizeY, sizeX)
 	grid.initRandom(randomSeedPercent)
 
 	grid.print()
